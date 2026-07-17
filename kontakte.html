@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rauschen — Ansprechpartner in Deutschland</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root{
+    --bg:#0d1b1e;--bg2:#0a1518;--ink:#eaf2f0;--muted:#8aa6a3;--line:#20393b;
+    --concrete:#5ec6c0;--episteme:#e0a458;--hot:#f06d6d;
+    --card:#122528;--card2:#0f2023;--good:#7fc8a4;--warn:#e8b06a;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:
+      radial-gradient(1200px 700px at 15% -10%, #14313033 0, transparent 60%),
+      radial-gradient(1000px 600px at 90% 0%, #2a1e0e40 0, transparent 55%),
+      var(--bg);
+    color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased;padding:48px 32px 96px;
+  }
+  .wrap{max-width:1040px;margin:0 auto}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+  h1{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(34px,5.5vw,62px);
+    line-height:1;letter-spacing:-.02em;margin:0 0 12px}
+  h1 .n{font-style:italic;font-weight:400}
+  .lede{max-width:680px;color:#c3d6d3;font-size:16.5px}
+  .lede b{color:var(--ink);font-weight:600}
+
+  .note{
+    margin:26px 0 34px;padding:16px 18px;border-radius:12px;
+    border:1px solid #2c4a44;background:#0e2226;font-size:13.5px;color:#b9ccc9;
+  }
+  .note b{color:var(--ink)}
+
+  .legend{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:30px;font-size:12.5px;color:var(--muted)}
+  .legend span{display:inline-flex;align-items:center;gap:7px}
+  .chip{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.08em;
+    text-transform:uppercase;padding:2px 8px;border-radius:20px;border:1px solid currentColor}
+  .chip.c{color:var(--concrete)}.chip.e{color:var(--episteme)}.chip.x{color:var(--muted)}
+
+  .card{
+    border:1px solid var(--line);border-radius:16px;margin-bottom:18px;
+    background:linear-gradient(180deg,var(--card),var(--card2));overflow:hidden;
+  }
+  .head{padding:20px 22px 16px;display:flex;gap:16px;align-items:flex-start;
+    border-bottom:1px solid #ffffff0c}
+  .num{font-family:'Fraunces',serif;font-weight:900;font-size:26px;line-height:1;
+    opacity:.26;min-width:34px}
+  .htext{flex:1}
+  .htext h2{margin:0 0 3px;font-family:'Fraunces',serif;font-weight:600;font-size:21px}
+  .htext .who{color:var(--muted);font-size:13.5px}
+  .htext .who b{color:#cfe0dd;font-weight:500}
+  .anchor{
+    flex:0 0 auto;text-align:right;font-size:11.5px;color:var(--muted);
+    font-family:'JetBrains Mono',monospace;max-width:150px;line-height:1.4;
+  }
+  .anchor .ast{color:var(--concrete);font-weight:500}
+
+  .rows{padding:6px 22px 20px}
+  .row{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:12px 0;
+    border-bottom:1px dashed #ffffff10}
+  .row:last-child{border-bottom:none}
+  .rlabel{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--muted);padding-top:2px}
+  .rlabel.good{color:var(--good)}
+  .rlabel.warn{color:var(--warn)}
+  .rbody{font-size:14px;color:#cfe0dd;line-height:1.55}
+  .rbody b{color:var(--ink);font-weight:600}
+  @media(max-width:600px){.row{grid-template-columns:1fr;gap:4px}.anchor{max-width:none;text-align:left}}
+
+  .sec-label{display:flex;align-items:center;gap:16px;margin:38px 2px 20px}
+  .sec-label .line{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
+  .sec-label .txt{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--muted);white-space:nowrap}
+
+  .closing{margin-top:36px;border:1px solid var(--line);border-radius:16px;padding:24px 26px;
+    background:linear-gradient(135deg,#12282b,#171f1c)}
+  .closing h3{font-family:'Fraunces',serif;font-weight:600;font-size:20px;margin:0 0 12px}
+  .closing p{color:#c3d6d3;font-size:14px;margin:0 0 10px;max-width:820px}
+  .closing .q{color:var(--hot);font-weight:600}
+  .foot{margin-top:22px;color:var(--muted);font-size:11.5px;font-family:'JetBrains Mono',monospace;line-height:1.6}
+</style>
+
+<style id="shared-nav-css">
+  .topnav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);
+    background:#0b171acc;border-bottom:1px solid #20393b;margin:-48px -32px 34px}
+  .topnav .inner{max-width:1100px;margin:0 auto;padding:12px 32px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+  .topnav .brand{font-family:'Fraunces',serif;font-weight:900;font-size:16px;letter-spacing:-.01em;margin-right:4px;color:#eaf2f0;text-decoration:none}
+  .topnav .brand .n{font-style:italic;font-weight:400}
+  .topnav a.navlink{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.04em;
+    color:#8aa6a3;text-decoration:none;padding:4px 0;border-bottom:2px solid transparent;transition:.15s}
+  .topnav a.navlink:hover{color:#eaf2f0}
+  .topnav a.navlink.active{color:#eaf2f0;border-bottom-color:#f06d6d}
+  @media(max-width:820px){.topnav .inner{gap:13px}.topnav .brand{width:100%}}
+</style>
+
+</head>
+<body>
+<nav class="topnav"><div class="inner"><a class="brand" href="index.html">Das <span class="n">Rauschen</span></a><a class="navlink" href="index.html">Manifest</a><a class="navlink" href="mindmap.html">Systematik</a><a class="navlink" href="geraete.html">Ger&auml;te</a><a class="navlink" href="versuche.html">Versuche</a><a class="navlink active" href="kontakte.html">Kontakte&nbsp;DE</a><a class="navlink" href="international.html">International</a><a class="navlink" href="fragen.html">Fragen</a></div></nav>
+<div class="wrap">
+  <div class="eyebrow">Begleitblatt zur Mindmap · Deutschland</div>
+  <h1>Ansprechpartner zum <span class="n">Rauschen</span></h1>
+  <p class="lede">Einrichtungen und Personen, geordnet nach ihrem Platz in der Mindmap. Jede Karte nennt den <b>Ast</b>, an dem sie ansetzt, <b>wofür</b> ein Austausch nützlich wäre — und welche <b>Bedenken</b> im Blick auf die Hintergrund-Überlegungen mitzudenken sind. Die Liste ist bewusst breit gehalten; Verwertbarkeit ist eine Überlegung unter mehreren, kein Filter.</p>
+
+  <div class="note">
+    <b>Zur Nutzung:</b> Die Reihenfolge ist keine Rangfolge, sondern folgt der Mindmap — vom neuronalen Rauschen über die Aggregations-Ökonomie und die methodische Prüfung bis zur übergreifenden Theorie. „Bedenken“ meint nicht „Einwand gegen den Kontakt“, sondern was man in <i>diesem</i> Austausch reflektieren sollte, damit aus einem echten Signal kein bloß gut erzähltes wird.
+  </div>
+
+  <div class="legend">
+    <span><span class="chip c">konkret</span> misst/rechnet am Signal</span>
+    <span><span class="chip e">episteme</span> denkt über den Begriff</span>
+    <span><span class="chip x">korrektiv</span> prüft die Belastbarkeit</span>
+  </div>
+
+  <!-- 1 -->
+  <div class="card">
+    <div class="head">
+      <div class="num">01</div>
+      <div class="htext">
+        <h2>Benjamin Lindner</h2>
+        <div class="who"><b>HU Berlin & Bernstein Center for Computational Neuroscience (BCCN)</b> · AG „Theory of Complex Systems and Neurophysics“ · people.physik.hu-berlin.de/~lindner</div>
+      </div>
+      <div class="anchor"><span class="ast">Ast 02 · 08</span><br>neuronales Rauschen</div>
+    </div>
+    <div class="rows">
+      <div class="row"><div class="rlabel">Ansatzpunkt</div><div class="rbody">Der theoretische Kern der Frage „wann trägt <b>neuronale Variabilität</b> Information statt Störung zu sein“ — stochastische Resonanz, Signalübertragung in verrauschten Neuronen. Genau der Kipp-Punkt, um den die ganze Mindmap kreist.</div></div>
+      <div class="row"><div class="rlabel good">Nützlich für</div><div class="rbody">Machbarkeits-Check jeder Idee der Form „im neuronalen/physiologischen Rauschen steckt ein reales Signal“. Zugang zum BCCN-Umfeld (Schreiber, Sprekeler, Kempter) für hochdimensionale Zeitreihen.</div></div>
+      <div class="row"><div class="rlabel warn">Bedenken</div><div class="rbody">Grundlagenphysik, kein Produktdenken — er wird eher fragen „ist der Effekt real und woher kommt er?“ als „lässt sich das vermarkten?“. Das ist ein Vorzug, nicht ein Mangel: ein früher Realitäts-Check, bevor eine Erzählung entsteht.</div></div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card">
+    <div class="head">
+      <div class="num">02</div>
+      <div class="htext">
+        <h2>Antonenko-Lab & R. Fleischmann</h2>
+        <div class="who"><b>Universitätsmedizin Greifswald / Charité Berlin</b> · Daria Antonenko, Robert Fleischmann, Sophie Leroy · antonenko-lab.de</div>
+      </div>
+      <div class="anchor"><span class="ast">Ast 08 · 09</span><br>EEG-Altern / aperiodisch</div>
+    </div>
+    <div class="rows">
+      <div class="row"><div class="rlabel">Ansatzpunkt</div><div class="rbody">Arbeitet direkt am <b>aperiodischen EEG-Anteil</b> — dem früheren „Grundrauschen“ — als altersabhängigem Marker und hat dafür Normwerte über die Lebensspanne erhoben. Die konkreteste deutsche Gruppe an der Naht von Ast 08 und 09.</div></div>
+      <div class="row"><div class="rlabel good">Nützlich für</div><div class="rbody">Klärung, ob der aperiodische Marker als <b>wiederholbarer, geräte-erfasster Endpunkt</b> taugt — der naheliegendste Anknüpfungspunkt, falls es in Richtung Alterns-/Kognitions-Readout gehen soll. Klinisch fundiert, mit realen Daten.</div></div>
+      <div class="row"><div class="rlabel warn">Bedenken</div><div class="rbody">Klinischer, kein Consumer-Kontext; die Marker sind vielversprechend, aber die „Verjüngungs“-Interpretation, die in der Tech-Bubble zirkuliert, geht über das hinaus, was solche Normwertstudien hergeben. Hier gilt die Pseudo-Uhr-Warnung besonders.</div></div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card">
+    <div class="head">
+      <div class="num">03</div>
+      <div class="htext">
+        <h2>HU/DIW-Ökonometrie</h2>
+        <div class="who"><b>Wirtschaftsw. Fakultät HU Berlin & DIW Berlin</b> · Umfeld hochdimensionale Zeitreihen (früheres IRTG 1792), Melanie Schienle, Wolfgang Härdle</div>
+      </div>
+      <div class="anchor"><span class="ast">Ast 05</span><br>Aggregation & Märkte</div>
+    </div>
+    <div class="rows">
+      <div class="row"><div class="rlabel">Ansatzpunkt</div><div class="rbody">Die <b>Mathematik der Signalextraktion</b> aus verrauschten, hochdimensionalen Daten — Mikrostrukturrauschen, „noise trading“, Prognosemärkte. Der Ort, an dem „das Netzwerk nimmt mehr wahr“ ökonomisch durchgerechnet ist.</div></div>
+      <div class="row"><div class="rlabel good">Nützlich für</div><div class="rbody">Wenn der Ansatz auf <b>Aggregation vieler verrauschter Quellen</b> beruht (Menschen, Sensoren, Marker): Wie extrahiert man das Signal sauber, und was ist es ökonomisch wert? Auch Prognosemärkte als erprobtes, monetarisiertes Muster.</div></div>
+      <div class="row"><div class="rlabel warn">Bedenken</div><div class="rbody">Denkt in Finanzmarkt-Kategorien; die Übertragung auf neuronale/biologische Daten ist nicht selbstverständlich. Nützlich für die Struktur des Arguments, weniger für den Inhalt des Signals.</div></div>
+    </div>
+  </div>
+
+  <div class="sec-label"><span class="line"></span><span class="txt">Korrektiv · nicht wegrationalisieren</span><span class="line"></span></div>
+
+  <!-- 4 -->
+  <div class="card">
+    <div class="head">
+      <div class="num">04</div>
+      <div class="htext">
+        <h2>QUEST Center</h2>
+        <div class="who"><b>Berlin Institute of Health (BIH) @ Charité</b> · Center for Responsible Research · s-quest.bihealth.org</div>
+      </div>
+      <div class="anchor"><span class="ast">Ast 04</span><br>Metascience</div>
+    </div>
+    <div class="rows">
+      <div class="row"><div class="rlabel">Ansatzpunkt</div><div class="rbody">Spezialisiert auf <b>Replizierbarkeit, p-Hacking und die Frage „ist dieser Befund nur Rauschen?“</b>. Die institutionelle Verkörperung der Warngrenze aus Ast 04.</div></div>
+      <div class="row"><div class="rlabel good">Nützlich für</div><div class="rbody">Der Sparringspartner, der prüft, ob ein gefundenes „Signal“ der Wiederholung standhält — bevor Zeit und Geld hineinfließen. Bei vielen Merkmalen und wenig Probanden (typisch für Neuro-/Longevity-Uhren) der entscheidende Filter gegen Pseudo-Uhren.</div></div>
+      <div class="row"><div class="rlabel warn">Bedenken</div><div class="rbody">Das <b>eigentliche Risiko liegt darin, diesen Kontakt zu überspringen</b>. Die Ziele „trifft die Bubble“ und „ist real“ ziehen auseinander; dies ist die einzige Station, deren Aufgabe es ist, „nein, das ist Rauschen“ zu sagen. Fällt sie weg, bleibt die GCP-artige Konstellation übrig.</div></div>
+    </div>
+  </div>
+
+  <div class="sec-label"><span class="line"></span><span class="txt">Perspektive · Framing & Narrativ</span><span class="line"></span></div>
+
+  <!-- 5 -->
+  <div class="card">
+    <div class="head">
+      <div class="num">05</div>
+      <div class="htext">
+        <h2>MPI für Wissenschaftsgeschichte</h2>
+        <div class="who"><b>MPIWG Berlin</b> · Umfeld Viktoria Tkaczyk (jetzt HU), „Epistemes of Modern Acoustics“ / historische Epistemologie · mpiwg-berlin.mpg.de</div>
+      </div>
+      <div class="anchor"><span class="ast">Ast 06</span><br>Wissensgeschichte</div>
+    </div>
+    <div class="rows">
+      <div class="row"><div class="rlabel">Ansatzpunkt</div><div class="rbody">Die <b>Geschichte des Begriffs „background noise“</b> selbst — wie Kulturen und Wissenschaften die Grenze zwischen Sinn und Un-Sinn immer wieder neu ziehen. Der voll epistemologische Pol der Mindmap.</div></div>
+      <div class="row"><div class="rlabel good">Nützlich für</div><div class="rbody">Das <b>Narrativ</b>, das solche Ansätze für ein anspruchsvolles Publikum interessant macht: die lange Linie von „Rauschen wird Signal“ (Hintergrundstrahlung, Pulsare, jetzt Neuro/Longevity). Gibt dem Vorhaben intellektuelle Tiefe und Einordnung.</div></div>
+      <div class="row"><div class="rlabel warn">Bedenken</div><div class="rbody">Liefert <b>Rahmen, kein Signal</b> und keinen Messweg. Reizvoll als Framing, aber ein Pitch, der stark auf der großen Erzählung ruht und dünn auf den Daten, kippt leicht ins bloß Suggestive — dieselbe Falle wie bei den mystifizierten Ansätzen.</div></div>
+    </div>
+  </div>
+
+  <div class="closing">
+    <h3>Wie diese Liste zur Mindmap steht</h3>
+    <p>Die Karten decken den <b>diagonalen Streifen</b> der Mindmap ab, auf dem sich das meiste Signal-Potenzial häuft: vom konkreten neuronalen Rauschen (01, 02) über die Aggregations-Ökonomie (03) bis zum epistemologischen Pol (05) — und mit dem Korrektiv (04) als Querachse, die alle anderen prüft.</p>
+    <p>Bewusst <b>nicht</b> aufgenommen sind Kontakte, die zwar zum Rauschen forschen, aber weder ein sammelbares Signal noch einen Anknüpfungspunkt für einen Austausch in deine Richtung bieten — Metrologie (PTB), reine Medientheorie, Bioakustik, Klangkunst. Sie stehen in der Mindmap, nicht hier; falls dein Ansatz sich verschiebt (etwa hin zu Sensor-/Audiodaten), kämen die TU-Signalverarbeitung oder die Bioakustik zurück ins Bild.</p>
+    <p>Der eine Satz, den die Anordnung transportieren soll: <span class="q">Sprich mit 01–03 darüber, ob ein Signal existiert und was es wert ist — und mit 04 darüber, ob es echt ist, bevor 05 dir hilft, die Geschichte zu erzählen.</span></p>
+    <p class="foot">Kontaktwege über die genannten Institutsseiten · Personen/Affiliationen Stand der Recherche Juli 2026, vor einer Kontaktaufnahme kurz gegenprüfen (Wechsel sind häufig) · Ast-Nummern verweisen auf die Datei „Systematik“.</p>
+  </div>
+</div>
+</body>
+</html>
